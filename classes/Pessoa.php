@@ -1,5 +1,5 @@
 <?php
-namespace classes; 
+//namespace classes; 
 //criando classe Pessoa
 class Pessoa {
     public $nome;
