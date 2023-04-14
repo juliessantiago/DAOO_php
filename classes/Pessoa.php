@@ -3,8 +3,8 @@
 class Pessoa {
     public $nome;
     public $idade; 
-    private $peso; 
-    private $altura; 
+    protected $peso; 
+    protected $altura; 
     
     //Modifique o construtor para que as propriedades de peso e altura sejam
     //obrigatórias e que apenas a idade seja opcional
@@ -23,7 +23,7 @@ class Pessoa {
     public function setPeso($valorPeso){
         print_r("\nPeso foi modificado"); 
         $this->peso = $valorPeso; 
-        $this->setIMC(); 
+        //$this->setIMC(); 
     }
 
     public function getAltura(){
@@ -33,21 +33,21 @@ class Pessoa {
     public function setAltura($valorAltura){
         echo("\nAltura foi modificada"); 
         $this->altura = $valorAltura; 
-        $this->setIMC(); 
+       // $this->setIMC(); 
     }
 
-    public function setIMC(){ //calcula
-        // var_dump($this->peso);  
-        if($this->peso == null || $this->altura == null){
-            echo ("\nNão é possível calcular IMC. Informe os dois valores"); 
-        }else{
-            $this->imc = ($this->peso/pow($this->altura, 2)); 
-        }
-    }
+    // public function setIMC(){ //calcula
+    //     // var_dump($this->peso);  
+    //     if($this->peso == null || $this->altura == null){
+    //         echo ("\nNão é possível calcular IMC. Informe os dois valores"); 
+    //     }else{
+    //         $this->imc = ($this->peso/pow($this->altura, 2)); 
+    //     }
+    // }
 
-    public function getIMC(){//mostra
-        echo("\nValor do IMC de ".$this->nome." é igual a ".number_format($this->imc,2,",",".")); 
-    }
+    // public function getIMC(){//mostra
+    //     echo("\nValor do IMC de ".$this->nome." é igual a ".number_format($this->imc,2,",",".")); 
+    // }
 }
 
 

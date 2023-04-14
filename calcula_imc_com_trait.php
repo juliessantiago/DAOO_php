@@ -13,5 +13,5 @@ include 'autoload.php';
 //     $classifica = IMC::classifica($pac); 
 //     echo("\n================\n"); 
 //}
-$atletinha = new Atleta("Flávio", 60, 65, 1.68); 
-var_dump($atletinha); 
+$atleta1 = new Atleta("Flávio", 60, 65, 1.68); 
+$atleta1->calc(); 
