@@ -11,7 +11,7 @@ class Relatorio {
 	public function log(Pessoa $pessoa)
 	{
 		if($pessoa instanceof iFuncionario){
-		    echo  $pessoa->mostrarSalario();
+		    echo  "\n".$pessoa->mostrarSalario();
 			echo "\n" .$pessoa->mostrarTempoContrato();
 		}
 
