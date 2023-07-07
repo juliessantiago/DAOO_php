@@ -6,7 +6,7 @@ class Pessoa {
     protected $peso; 
     protected $altura; 
     
-    //Modifique o construtor para que as propriedades de peso e altura sejam
+    //Modificar o construtor para que as propriedades de peso e altura sejam
     //obrigatórias e que apenas a idade seja opcional
 
    function __construct($nome = null, $idade = null, $peso, $altura){

@@ -15,3 +15,20 @@ include 'autoload.php';
 //}
 $atleta1 = new Atleta("Flávio", 60, 65, 1.68); 
 $atleta1->calc(); 
+$atleta1->classifica();
+//saudável
+
+$atleta2 = new Atleta("Roberto", 32, 90, 1.75);
+$atleta2->calc();
+$atleta2->classifica();
+//sobrepeso
+
+$atleta3 = new Atleta("Ana Luiza", 16, 50, 1.68);
+$atleta3->calc();
+$atleta3->classifica();
+//abaixo do peso
+
+$atleta4 = new Atleta("Julia", 28, 81, 1.64);
+$atleta4->calc();
+$atleta4->classifica();
+//obesidade
